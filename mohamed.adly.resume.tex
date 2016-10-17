@@ -1,178 +1,117 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Long Professional Curriculum Vitae
-% LaTeX Template
-% Version 1.1 (9/12/12)
-%
-% This template has been downloaded from:
-% http://www.latextemplates.com
-%
-% Original author:
-% Rensselaer Polytechnic Institute (http://www.rpi.edu/dept/arc/training/latex/resumes/)
-%
-% Important note:
-% This template requires the res.cls file to be in the same directory as the
-% .tex file. The res.cls file provides the resume style used for structuring the
-% document.
-%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% The MIT License (MIT)
+%%
+%% Copyright (c) 2015 Daniil Belyakov
+%%
+%% Permission is hereby granted, free of charge, to any person obtaining a copy
+%% of this software and associated documentation files (the "Software"), to deal
+%% in the Software without restriction, including without limitation the rights
+%% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%% copies of the Software, and to permit persons to whom the Software is
+%% furnished to do so, subject to the following conditions:
+%%
+%% The above copyright notice and this permission notice shall be included in all
+%% copies or substantial portions of the Software.
+%%
+%% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+%% SOFTWARE.
 
-%----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
-%----------------------------------------------------------------------------------------
+% The font could be set to Windows-specific Calibri by using the 'calibri' option
+\documentclass[]{mcdowellcv}
 
-\documentclass[10pt]{res} % Use the res.cls style, the font size can be changed to 11pt or 12pt here
+% For mathematical symbols
+\usepackage{amsmath}
 
-\usepackage{helvet} % Default font is the helvetica postscript font
-%\usepackage{newcent} % To change the default font to the new century schoolbook postscript font uncomment this line and comment the one above
-\usepackage{datetime}
-
-\usepackage[hidelinks]{hyperref}
-\newsectionwidth{0pt} % Stops section indenting
+% Set applicant's personal data for header
+\name{Mohamed Adly}
+\address{123 Spruce St, Apt 35 \linebreak eng.mohamed.adly@gmail.com}
+%\contacts{+966500981179 \linebreak eng.mohamed.adly@gmail.com}
 
 \begin{document}
 
-%----------------------------------------------------------------------------------------
-%	YOUR NAME AND ADDRESS(ES) SECTION
-%----------------------------------------------------------------------------------------
-
-\name{Mohamed Adly ElGamasy\\ \\} % Your name at the top
-
-% If you don't want one of the addresses, simply remove all the text in the first or second \address{} bracket
-\address{{\bf \href{mailto:eng.mohamed.adly@gmail.com}{eng.mohamed.adly@gmail.com} } \\ Nationality: Egyptian \\ Date of Birth: July 17, 1989  \\ \href{https://www.linkedin.com/in/mohamedadly}{https://www.linkedin.com/in/mohamedadly} } % Your address 1
-
-\address{{\bf Current Address}  \\ Jeddah, Saudi Arabia \\ +966500981179} % Your address 2
-
-%----------------------------------------------------------------------------------------
-
-\begin{resume}
-
-%----------------------------------------------------------------------------------------
-%	OBJECTIVE SECTION
-%----------------------------------------------------------------------------------------
-
-%\section{\centerline{OBJECTIVE}}
-
-%\vspace{8pt} % Gap between title and text
-
-%A position in Personnel Administration utilizing skills in recruiting, training and compensation.\\ 
-
-%----------------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{EDUCATION}} 
-
-\vspace{8pt} % Gap between title and text
-
-{\sl Bachelor of Science}, 
-Computer and Systems Engineering \\ 
-Alexandria University, Egypt \hfill July 2011 \\ 
-Graduation Project: Service Oriented Architecture Web Portal \\
-GPA 3.5 , Grade : Very Good
-%----------------------------------------------------------------------------------------
- 
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	PROFESSIONAL EXPERIENCE SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{PROFESSIONAL EXPERIENCE}} 
-
-\vspace{8pt} % Gap between title and text
-
-{\sl Futures Business Development (\href{www.fbd.net}{www.fbd.net})} \hfill April 2014 -- Present \\
-Software Engineer, Jeddah, Saudi Arabia \\
-Project Lead of Search and Map (\href{https://www.searchandmap.com}{www.searchandmap.com}) \\
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Native iOS Mobile Applications Development.
-\item Development and Maintenance of Application Servers using C++ / C++ 11 / Boost
-\item Database Design and Development with (MySQL) and (MySQL-Cluster) 
-\item Amazon Web Services (AWS) Development and Integration including (EC2 / S3 / Lambda / SNS / Elastic Transcoder)
-\item Writing scripts using PHP to help maintaining the backend.
-\end{itemize}
-
-{\sl nWeave (\href{www.nweave.com}{www.nweave.com})} \hfill March 2013 -- April 2014 \\
-Software Engineer, Alexandria, Egypt \\
-\begin{itemize} \itemsep -2pt % Reduce space between items
-\item Analysis and design of multiple mobile applications
-\item iOS applications design and development
-\item Cross-platform game development using Cocos2D-X with C++ on iOS / Android / Windows Phone
-\item Box2D development with C++
-\end{itemize}
-
-{\sl Republican Guard, Information Systems Department} \hfill March 2012 -- March 2013 \\
-Software Engineer, Cairo, Egypt \\
-\begin{itemize} \itemsep -2pt % Reduce space between item
-\item Design and develop applications to help other departments automating their work
-\item Maintenance and administration of the internal military network
-\item Giving technical support and advice to other departments regarding software/hardware issues
-\item Train and giving sessions to new recruits about the basics of databases   
-\end{itemize}
-
-{\sl Online Technical Services (OTS) (\href{http://www.ots-it.com/}{www.ots-it.com})} \hfill September 2011 -- January 2012 \\
-Software Engineer, Alexandria, Egypt \\
-\begin{itemize} \itemsep -2pt % Reduce space between item
-\item Web development with ASP.NET
-\item Database design and development with Microsoft SQL Server
-\end{itemize}	
-
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{SKILLS}}
-
-\vspace{12pt} % Gap between title and text
-
-\begin{itemize} \itemsep -2pt
-\item iOS Mobile Applications Development (Objective-C / Swift / Cocos2d-x C++ Game Development)
-\item Backend Applications Development (C++ / C++ 11 / Boost / PHP) 
-\item Hands-on experience with Amazon Web Services (AWS) including: EC2, Lambda, S3, VPC, SNS and Elastic Transcoder 
-\item Database Design and Development (MySQL / MySQL Cluster) 
-\end{itemize}
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	HONORS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{HONORS}} 
-
-\vspace{12pt} % Reduce space between section title and contents
-
-\begin{itemize} \itemsep -2pt % Reduce space between items
-	\item Certificate of Recognition from Microsoft in appreciation for contribution to the Arabic Captions Language Interface Pack for Visual Studio 2010. (Awarded 24th May 2010)
-\end{itemize}
-
-
-%----------------------------------------------------------------------------------------
-
-\vspace{0.2in} % Some whitespace between sections
-
-%----------------------------------------------------------------------------------------
-%	INTERESTS SECTION
-%----------------------------------------------------------------------------------------
-
-\section{\centerline{References}} 
-
-\vspace{-5pt} % Reduce space between section title and contents
-
-\begin{center}
-Available Upon Request.
-\end{center} 
-
-\vspace{100pt}
-
-
-\hfill Updated: April 2016\\
-%----------------------------------------------------------------------------------------
-
-\end{resume} 
+	% Print the header
+	\makeheader
+	
+	% Print the content
+	\begin{cvsection}{Employment}
+		\begin{cvsubsection}{Software Engineer, Intern}{Apple Computer}{Summer 2004}
+			iChat AV			
+			\begin{itemize}
+				\item Reduced time to render the user’s buddy list by 75\% by implementing prediction algorithm.
+				\item Implemented iChat integration with OS X Spotlight Search by creating tool which extracts metadata from saved chat transcripts and provides metadata to a system-wide search database.
+				\item Redesigned chat file format and implemented backwards compatibility for search.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Lead Student Ambassador}{Microsoft Corporation}{Fall 2003 -- Spring 2005}	
+			\begin{itemize}
+				\item Promoted to Lead Student Ambassador in Fall 2004; supervised 10 -- 15 Student Ambassadors.
+				\item Created and taught Computer Science course, CSE 099: Software Design and Development.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Head Teaching Assistant}{University of Pennsylvania}{Fall 2001 -- Spring 2005}		
+			\begin{itemize}
+				\item Courses: Advanced Java III, Software Engineering, Mathematical Foundations of Computer Science I \& II.
+				\item Promoted to Head TA in Fall 2004; led weekly meetings and supervised four other TAs.
+			\end{itemize}
+		\end{cvsubsection}
+		
+		\begin{cvsubsection}{Software Design Engineer, Intern}{Microsoft Corporation}{Summers 2001 -- 2003}
+			Visual Studio Core (Summer 2003)		
+			\begin{itemize}
+				\item Implemented a user interface for the VS open file switcher (ctrl-tab) and extended it to tool windows.
+				\item Created service to provide gradient across VS and VS add-ins. Optimized service via caching.
+			\end{itemize}
+			Programmer Productivity Research Center (Summers 2001, 2002)
+			\begin{itemize}
+				\item Built app to compute similarity of all methods in a code base; reduced time from $O(n^2)$ to $O(n\ log\ n)$. 
+				\item Created test case generation tool which creates random XML docs from XML Schema.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Education}
+		\begin{cvsubsection}{Philadelphia, PA}{University of Pennsylvania}{Fall 2000 -- May 2005}
+			\begin{itemize}
+				\item M.S.E. in Computer and Information Science, May 2005. GPA: 3.6
+				\item B.S.E. in Computer Science Engineering with Minor in Mathematics, May 2005.  In-major GPA: 3.4.
+				\item Graduate Coursework: Software Foundations; Computer Architecture; Algorithms; Artificial Intelligence; Comparison of Learning Algorithms; Computational Theory.
+				\item Undergraduate Coursework: Operating Systems; Databases; Algorithms; Programming Languages; Comp. Architecture; Engineering Entrepreneurship; Calculus III.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Technical Experience}
+		\begin{cvsubsection}{Projects}{}{}
+			\begin{itemize}
+				\item \textbf{Multi-User Drawing Tool} (2004). Electronic classroom where multiple users can view and simultaneously draw on a “chalkboard” with each person’s edits synchronized.  C++, MFC
+				\item \textbf{Synchronized Calendar} (2003 – 2004). Desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users.  C\#.NET, SQL, XML
+				\item \textbf{Operating System} (2002).  UNIX-style OS with scheduler, file system, text editor and calculator. C
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Additional Experience and Awards}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item \textbf{Instructor (2003 – 2005):} Taught two full-credit Computer Science courses; average ratings of 4.8 out of 5.0.
+				\item \textbf{Third Prize, Senior Design Projects:} Awarded 3rd prize for Synchronized Calendar project, out of 100 projects.
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
+	\begin{cvsection}{Languages and Technologies}
+		\begin{cvsubsection}{}{}{}	
+			\begin{itemize}
+				\item C++; C; Java; Objective-C; C\#.NET; SQL; JavaScript; XSLT; XML (XSD) Schema 
+				\item Visual Studio; Microsoft SQL Server; Eclipse; XCode; Interface Builder
+			\end{itemize}
+		\end{cvsubsection}
+	\end{cvsection}
+	
 \end{document}
